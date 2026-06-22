@@ -9,4 +9,7 @@ enum Config {
 
     static let imageBaseURL =
     "https://image.tmdb.org/t/p/w500"
+
+    static let backdropImageBaseURL =
+    "https://image.tmdb.org/t/p/w780"
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Movie: Identifiable, Codable {
+struct Movie: Identifiable, Codable, Hashable {
 
     let id: Int
     let title: String
@@ -22,5 +22,9 @@ extension Movie {
             string:
             "\(Config.imageBaseURL)\(posterPath)"
         )
+    }
+
+    var releaseYear: String {
+        String(releaseDate.prefix(4))
     }
 }
